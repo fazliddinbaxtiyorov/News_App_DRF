@@ -1,0 +1,22 @@
+{% load static %}
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h1>Photo Gallery</h1>
+    <div class="container">
+        {% for i in news %}
+        <img  src="{{ i.photo }}" alt="{{ i.title }}"  />
+    <div class="post">
+        <p>Author:{{ i.url }}</p>
+        <p>Title:{{ i.title }}</p>
+        <p>Date:{{ i.date_time }}</p>
+        <p>Date:{{ i.content }}</p>
+
+    </div>
+
+        {% endfor %}
+    </div>
+</body>
+</html>
