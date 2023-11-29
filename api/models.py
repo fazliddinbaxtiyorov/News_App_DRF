@@ -6,7 +6,7 @@ from django.db import models
 class NewsModels(models.Model):
     title = models.CharField(max_length=80)
     link = models.URLField(max_length=120)
-    photo = models.ImageField()
+    photo = models.URLField(null=True, blank=True)
     content = models.CharField(max_length=120)
     date_time = models.CharField(max_length=10)
 
