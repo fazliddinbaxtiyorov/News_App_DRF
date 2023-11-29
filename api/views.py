@@ -16,7 +16,7 @@ class NewsView(APIView):
     renderer_classes = [TemplateHTMLRenderer]
     template_name = 'api/index.html'
     throttle_scope = 'news'
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [permissions.AllowAny]
 
     def get(self, request):
         num = randint(1, 100)
