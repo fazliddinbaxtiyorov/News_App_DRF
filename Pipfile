@@ -10,6 +10,7 @@ requests = "*"
 pillow = "*"
 drf-spectacular = "*"
 psycopg2-binary = "*"
+whitenoise = "*"
 
 [dev-packages]
 

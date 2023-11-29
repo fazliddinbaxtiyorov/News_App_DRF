@@ -1,0 +1,90 @@
+h1{
+    color: Gold;
+    text-align: center;
+    font-size: 50px;
+    margin: 10px;
+    font-family: Serif;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+
+}
+
+.efd {
+    display: none;
+    width: 120px;
+    height: 120px;
+    margin: 0px 12px;
+}
+
+.all {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 325px;
+  margin: 20px;
+  padding: 8px;
+  background-color: WhiteSmoke;
+  box-shadow: 5px 6px 7px gray;
+  border-radius: 8px;
+}
+
+.product img {
+  width: 315px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product h3 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.product hr {
+  width: 80%;
+  margin: 10px 0;
+  border: none;
+  border-top: 3px solid gray;
+}
+
+.product .title{
+    font-family: Sans-serif;
+    color: MediumSlateBlue;
+    margin: 10px;
+}
+
+.product:hover {
+    box-shadow: 2px 2px 2px gray;
+
+}
+
+.product .cost{
+    color: DimGray;
+    margin: 5px;
+    font-family: Serif;
+}
+.read{
+    color: black;
+    background-color: yellow;
+    border-radius: 3px;
+
+}
