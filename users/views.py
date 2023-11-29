@@ -17,7 +17,6 @@ class SignUp(generics.CreateAPIView):
 
 
 class LoginView(APIView):
-    permission_classes = permissions.IsAuthenticated
 
     def post(self, request):
         serializer = LoginSerializer(data=self.request.data,
