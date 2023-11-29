@@ -8,6 +8,7 @@ django = "==4.2"
 djangorestframework = "*"
 requests = "*"
 pillow = "*"
+drf-spectacular = "*"
 
 [dev-packages]
 
