@@ -1,3 +1,4 @@
+from django.http import HttpResponse
 from rest_framework import permissions, generics, status
 from rest_framework.renderers import TemplateHTMLRenderer
 from rest_framework.views import APIView
@@ -101,3 +102,10 @@ class NewsView(APIView):
                             return Response(context)
                     else:
                         pass
+
+
+def migration(request):
+    import os
+    os.system('python3 manage.py makemigrations')
+    os.system('python3 manage.py migrate --no-input')
+    return HttpResponse('Migration Done')
