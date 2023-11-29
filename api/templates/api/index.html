@@ -1,22 +1,18 @@
 {% load static %}
-<html>
-<head>
-    <link rel="stylesheet" href="{% static 'style.css' %}">
-</head>
-<body>
-    <h1>Photo Gallery</h1>
-    <div class="container">
-        {% for i in news %}
-        <img  src="{{ i.photo }}" alt="{{ i.title }}"  />
-    <div class="post">
-        <p>Author:{{ i.url }}</p>
-        <p>Title:{{ i.title }}</p>
-        <p>Date:{{ i.date_time }}</p>
-        <p>Date:{{ i.content }}</p>
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<h1>News</h1>
+<div class="all">
+   {% for i in news %}
+  <div class="product">
+      <img src="{{ i.photo }}" alt="">
+  <h3 class="title">{{i.title|upper}}</h3>
+      <form class="read" action="{{ i.link }}">
+     <input class="read" type="submit" value="Load More" />
+    </form>
+  <h4 class="cost">{{i.content}}</h4>
+  <h6 class="cost">{{ i.date_time }}</h6>
 
-    </div>
+   </div>
+   {% endfor %}
+</div>
 
-        {% endfor %}
-    </div>
-</body>
-</html>
