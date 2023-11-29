@@ -81,11 +81,14 @@ WSGI_APPLICATION = 'config.wsgi.app'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'verceldb',
+        'USER': "default",
+        'HOST': "ep-dark-meadow-07058978-pooler.us-east-1.postgres.vercel-storage.com",
+        'PASSWORD': "lrgGWk8x3wms"
+
     }
 }
-
 REST_FRAMEWORK = {
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
     'DEFAULT_AUTHENTICATION_CLASSES': [
