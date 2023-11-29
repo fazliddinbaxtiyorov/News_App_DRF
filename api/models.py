@@ -5,9 +5,9 @@ from django.db import models
 
 class NewsModels(models.Model):
     title = models.CharField(max_length=80)
-    link = models.URLField(max_length=120)
+    link = models.URLField(max_length=100)
     photo = models.URLField(null=True, blank=True)
-    content = models.CharField(max_length=120)
+    content = models.CharField(max_length=100)
     date_time = models.CharField(max_length=10)
 
     class Meta:

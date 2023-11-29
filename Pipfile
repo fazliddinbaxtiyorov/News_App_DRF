@@ -9,6 +9,7 @@ djangorestframework = "*"
 requests = "*"
 pillow = "*"
 drf-spectacular = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
 
